@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Curated Studios - cinematic videography, photography, editing, and event storytelling by Abijith."
+    />
+    <title>The Curated Studios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true">
+      <video
+        id="cameraFilm"
+        class="scene-video"
+        src="assets/camera-background.mp4"
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="scene-shade"></div>
+      <div class="grain"></div>
+      <div class="scan-line"></div>
+    </div>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="#top" aria-label="The Curated Studios home">
+        <span>The Curated Studios</span>
+        <img src="assets/logo.jpeg" alt="The Curated Studios logo" />
+      </a>
+      <nav>
+        <a href="#founder">Founder</a>
+        <a href="#services">Services</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Video Production & Storytelling</p>
+          <div class="hero-title-row">
+            <h1>The Curated Studios</h1>
+            <img src="assets/logo.jpeg" alt="The Curated Studios logo" />
+          </div>
+          <p class="hero-text">
+            Cinematic visuals for people, events, brands, vehicles, campaigns,
+            and stories that deserve a sharper frame.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#works">View Works</a>
+            <a class="secondary-link" href="tel:+919361449426">Book a Shoot</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="founder" class="section founder-section">
+        <article class="glass-card founder-card tilt-card reveal">
+          <div class="card-glow"></div>
+          <div class="founder-photo">
+            <img src="assets/founder.jpeg" alt="Abijith, founder of The Curated Studios" />
+          </div>
+          <div class="founder-copy">
+            <p class="eyebrow">Founder</p>
+            <h2>Abijith</h2>
+            <p class="role">Videographer & Photographer</p>
+            <p>
+              Abijith leads The Curated Studios with a cinematic eye for pace,
+              light, emotion, and clean visual rhythm. His work blends on-ground
+              shooting, event coverage, personal portraits, and sharp edits into
+              polished stories built for modern screens.
+            </p>
+          </div>
+        </article>
+
+        <button
+          class="founder-film reveal"
+          type="button"
+          data-video="assets/founder-film.mp4"
+          data-title="Founder Film"
+          data-meta="A cinematic look at Abijith behind the lens."
+          data-format="wide"
+          data-preview-time="1.2"
+          aria-label="Play founder film"
+        >
+          <video
+            src="assets/founder-film.mp4"
+            muted
+            playsinline
+            preload="auto"
+          ></video>
+          <div>
+            <span>Founder Film</span>
+            <strong>Behind the lens</strong>
+          </div>
+        </button>
+      </section>
+
+      <section id="services" class="section">
+        <article class="glass-card services-card tilt-card reveal">
+          <p class="eyebrow">The Service</p>
+          <h2>Frame-by-frame production for moments that matter.</h2>
+          <div class="service-grid">
+            <div>
+              <span>01</span>
+              <h3>Videography</h3>
+              <p>
+                On-spot cinematic coverage for events, launches, campaigns,
+                reels, celebrations, and high-energy moments.
+              </p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Event Photography</h3>
+              <p>
+                Crisp stills that capture people, decor, emotion, action, and
+                the atmosphere of the occasion.
+              </p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Personal Shoots</h3>
+              <p>
+                Portraits, lifestyle frames, portfolio visuals, and personal
+                edits crafted with a premium studio finish.
+              </p>
+            </div>
+            <div>
+              <span>04</span>
+              <h3>Video Editing</h3>
+              <p>
+                Color, sound, transitions, pacing, title treatment, and social
+                cuts shaped for impact across platforms.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="works" class="section works-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Previous Works</p>
+          <h2>Edits with energy, intention, and sound.</h2>
+        </div>
+
+        <div class="work-grid">
+          <button
+            class="work-card personal-work reveal"
+            type="button"
+            data-video="assets/personal-edit.mp4"
+            data-title="Personal Edit"
+            data-meta="Portrait pacing, style cuts, and mood-led storytelling."
+            data-preview-time="1.2"
+          >
+            <video src="assets/personal-edit.mp4" muted playsinline preload="auto"></video>
+            <span>Personal Edit</span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-video="assets/vehicle-edit.mp4"
+            data-title="Vehicle Edit"
+            data-meta="Motion, detail shots, road energy, and crisp transitions."
+            data-preview-time="1.2"
+          >
+            <video src="assets/vehicle-edit.mp4" muted playsinline preload="auto"></video>
+            <span>Vehicle Edit</span>
+          </button>
+
+          <button
+            class="work-card reveal"
+            type="button"
+            data-video="assets/political-edit.mp4"
+            data-title="Political Edit"
+            data-meta="Campaign visuals with presence, scale, and momentum."
+            data-preview-time="1.2"
+          >
+            <video src="assets/political-edit.mp4" muted playsinline preload="auto"></video>
+            <span>Political Edit</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section">
+        <article class="glass-card trust-card tilt-card reveal">
+          <p class="eyebrow">Trust Factor</p>
+          <h2>Reliable, clear, and built around the final output.</h2>
+          <div class="trust-grid">
+            <div>
+              <strong>Fast response</strong>
+              <span>Clear booking, timing, and shoot coordination.</span>
+            </div>
+            <div>
+              <strong>Premium finish</strong>
+              <span>Clean color, cinematic texture, and platform-ready edits.</span>
+            </div>
+            <div>
+              <strong>Event ready</strong>
+              <span>Focused coverage for live, personal, and public moments.</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <article class="glass-card contact-card tilt-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let the next story feel curated.</h2>
+          <div class="contact-list">
+            <div><span>Name</span><strong>Abijith</strong></div>
+            <a href="tel:+919361449426"><span>Contact</span><strong>9361449426</strong></a>
+            <a href="mailto:abijithv19@gmail.com"><span>Mail ID</span><strong>abijithv19@gmail.com</strong></a>
+            <a href="https://www.instagram.com/curated._.studios" target="_blank" rel="noreferrer">
+              <span>Instagram</span><strong>curated._.studios</strong>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="modal" id="workModal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-close aria-label="Close video">&times;</button>
+        <video id="modalVideo" controls playsinline></video>
+        <div class="modal-copy">
+          <h2 id="modalTitle"></h2>
+          <p id="modalMeta"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
