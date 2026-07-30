@@ -805,16 +805,21 @@ h3 {
   }
 
   .hero-title-row img {
-    width: clamp(4.4rem, 18vw, 5.8rem);
-    height: clamp(4.4rem, 18vw, 5.8rem);
+    width: clamp(4rem, 15vw, 4.8rem);
+    height: clamp(4rem, 15vw, 4.8rem);
   }
 
   .hero-title-row {
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    width: 100%;
+    gap: 0.45rem;
   }
 
   h1 {
-    font-size: clamp(2.05rem, 10.5vw, 3.25rem);
+    max-width: none;
+    font-size: clamp(1.95rem, 9.4vw, 2.85rem);
   }
 
   h2 {
@@ -824,6 +829,10 @@ h3 {
   .section {
     width: min(100% - 1rem, 1180px);
     padding-block: 4.5rem;
+  }
+
+  .hero {
+    padding-top: 12rem;
   }
 
   .hero-actions a {
